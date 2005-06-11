@@ -15,10 +15,10 @@ Source1:	http://dl.sourceforge.net/ksquirrel/%{name}-libs-%{version}-pre3.tar.bz
 # Source1-md5:  7e0311f34664261f116feec6c015791f
 Patch0:		%{name}.desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
+BuildRequires:  OpenGL-devel
 #BuildRequires:	autoconf
 #BuildRequires:	automake
 BuildRequires:  kdebase-devel >= 3.2
-BuildRequires:  OpenGL-devel
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -75,4 +75,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ksquirrel
 %{_desktopdir}/ksquirrel.desktop
 %{_datadir}/apps
-%{_iconsdir}
+%{_iconsdir}/*/*/*/*

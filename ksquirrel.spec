@@ -24,21 +24,25 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KSquirrel is an image viewer for KDE with disk navigator, file tree, thumbnails, extended thumbnails, dynamic format support and tools to resize, convert, colorize and print images.
+KSquirrel is an image viewer for KDE with disk navigator, file tree,
+thumbnails, extended thumbnails, dynamic format support and tools to
+resize, convert, colorize and print images.
 
 %description -l pl
-KSquirrel to przegl±darka obrazków dla KDE z nawikacj± po dyskach, drzewku plików, miniaturkach, rozszerzonych miniaturkach i narzêdziach do zmiany wielko¶ci, rozszerzenia, koloru i drukowania obrazków.
+KSquirrel to przegl±darka obrazków dla KDE z nawigacj± po dyskach,
+drzewku plików, miniaturkach, rozszerzonych miniaturkach i narzêdziach
+do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 
 %package libs
 Summary:        KSquirrel libraries
-Summary(pl):    Biblioteki przegladarki graficznej KSquirrel
+Summary(pl):    Biblioteki przegl±darki graficznej KSquirrel
 Group:          X11/Applications/Graphics
 
 %description libs
-ksquirrel libraries
+ksquirrel libraries.
 
 %description libs -l pl
-Biblioteki przegladarki graficznej KSquirrel
+Biblioteki przegl±darki graficznej KSquirrel.
 
 %prep
 %setup -q
@@ -50,7 +54,6 @@ Biblioteki przegladarki graficznej KSquirrel
 #%{__automake}
 %configure
 %{__make}
-
 
 %install
 rm -rf $RPM_BUILD_ROOT

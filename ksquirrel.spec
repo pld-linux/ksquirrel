@@ -1,5 +1,4 @@
 # TODO
-# - categories fix
 # - libs package
 # - check BR/B
 
@@ -14,7 +13,7 @@ Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}-pre4.tar.bz2
 # Source0-md5:	3a1894e8bef2131adb8b1a8ca7c824b1
 Source1:	http://dl.sourceforge.net/ksquirrel/%{name}-libs-%{version}-pre3.tar.bz2
 # Source1-md5:  7e0311f34664261f116feec6c015791f
-#Patch0:		%{name}-etc_dir.patch
+Patch0:		%{name}.desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
 #BuildRequires:	autoconf
 #BuildRequires:	automake
@@ -46,6 +45,7 @@ Biblioteki przegl±darki graficznej KSquirrel.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 #%{__aclocal}

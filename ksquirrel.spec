@@ -9,9 +9,9 @@ Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
 # Source0-md5:	06bdb4235c082b529f54e41376a7c957
 Patch0:		%{name}.desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
+BuildRequires:	OpenGL-devel
 BuildRequires:	automake
-BuildRequires:  OpenGL-devel
-BuildRequires:  kdebase-devel >= 3.2
+BuildRequires:	kdebase-devel >= 3.2
 BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	ksquirrel-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

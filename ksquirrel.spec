@@ -1,4 +1,3 @@
-
 Summary:	Graphics file browser utility
 Summary(pl):	Narzêdzie do przegl±dania plików graficznych
 Name:		ksquirrel
@@ -10,6 +9,7 @@ Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
 # Source0-md5:	06bdb4235c082b529f54e41376a7c957
 Patch0:		%{name}.desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
+BuildRequires:	automake
 BuildRequires:  OpenGL-devel
 BuildRequires:  kdebase-devel >= 3.2
 BuildRequires:	rpmbuild(macros) >= 1.197
@@ -31,7 +31,14 @@ do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 %patch0 -p1
 
 %build
-%configure
+sed -i -e 's#/usr/lib/squirrel/#%{_libdir}/ksquirrel#g' \
+	./ksquirrel/ksquirrel.cpp ./ksquirrel/ksquirrelrc ./ksquirrel/sq_options.ui.h
+install %{_datadir}/automake/config.* admin
+%configure \
+%if "%{_lib}" == "lib64"
+        --enable-libsuffix=64 \
+%endif
+        --with-qt-libraries=%{_libdir}
 %{__make}
 
 %install

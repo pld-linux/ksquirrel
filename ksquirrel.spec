@@ -36,9 +36,9 @@ sed -i -e 's#/usr/lib/squirrel/#%{_libdir}/ksquirrel#g' \
 install %{_datadir}/automake/config.* admin
 %configure \
 %if "%{_lib}" == "lib64"
-        --enable-libsuffix=64 \
+	--enable-libsuffix=64 \
 %endif
-        --with-qt-libraries=%{_libdir}
+	--with-qt-libraries=%{_libdir}
 %{__make}
 
 %install

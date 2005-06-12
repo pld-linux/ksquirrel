@@ -1,25 +1,19 @@
-# TODO
-# - libs package
-# - check BR/B
 
 Summary:	Graphics file browser utility
 Summary(pl):	Narzêdzie do przegl±dania plików graficznych
 Name:		ksquirrel
-Version:	0.6.0
-Release:	0.1
+Version:	0.5.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}-pre4.tar.bz2
-# Source0-md5:	3a1894e8bef2131adb8b1a8ca7c824b1
-Source1:	http://dl.sourceforge.net/ksquirrel/%{name}-libs-%{version}-pre3.tar.bz2
-# Source1-md5:  7e0311f34664261f116feec6c015791f
+Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
+# Source0-md5:	06bdb4235c082b529f54e41376a7c957
 Patch0:		%{name}.desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:  OpenGL-devel
-#BuildRequires:	autoconf
-#BuildRequires:	automake
 BuildRequires:  kdebase-devel >= 3.2
 BuildRequires:	rpmbuild(macros) >= 1.197
+Requires:	ksquirrel-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,26 +26,11 @@ KSquirrel to przegl±darka obrazków dla KDE z nawigacj± po dyskach,
 drzewku plików, miniaturkach, rozszerzonych miniaturkach i narzêdziach
 do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 
-%package libs
-Summary:        KSquirrel libraries
-Summary(pl):    Biblioteki przegl±darki graficznej KSquirrel
-Group:          X11/Applications/Graphics
-
-%description libs
-ksquirrel libraries.
-
-%description libs -l pl
-Biblioteki przegl±darki graficznej KSquirrel.
-
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-#%{__aclocal}
-#%{__autoconf}
-#%{__autoheader}
-#%{__automake}
 %configure
 %{__make}
 

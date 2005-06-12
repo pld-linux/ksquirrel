@@ -13,6 +13,7 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	automake
 BuildRequires:	kdebase-devel >= 3.2
 BuildRequires:	rpmbuild(macros) >= 1.197
+BuildRequires:	sed >= 4.0
 Requires:	ksquirrel-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +34,7 @@ do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 %build
 sed -i -e 's#/usr/lib/squirrel/#%{_libdir}/ksquirrel#g' \
 	./ksquirrel/ksquirrel.cpp ./ksquirrel/ksquirrelrc ./ksquirrel/sq_options.ui.h
-install %{_datadir}/automake/config.* admin
+install /usr/share/automake/config.* admin
 %configure \
 %if "%{_lib}" == "lib64"
 	--enable-libsuffix=64 \

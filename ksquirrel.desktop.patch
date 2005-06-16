@@ -1,7 +1,0 @@
---- ksquirrel-0.6.0/ksquirrel/ksquirrel.desktop.old	2005-06-11 16:49:42.000000000 +0200
-+++ ksquirrel-0.6.0/ksquirrel/ksquirrel.desktop	2005-06-11 16:50:36.000000000 +0200
-@@ -10,3 +10,4 @@
- Terminal=0
- Name=Ksquirrel
- Name[de]=Ksquirrel
-+Categories=Qt;KDE;Graphics;Viewer;

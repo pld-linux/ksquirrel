@@ -7,7 +7,7 @@ License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
 # Source0-md5:	06bdb4235c082b529f54e41376a7c957
-Patch0:		%{name}.desktop.patch
+Source1:	%{name}.desktop
 URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automake
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_desktopdir}
-mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Applications/ksquirrel.desktop $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
 

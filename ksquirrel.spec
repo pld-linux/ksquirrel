@@ -2,7 +2,7 @@ Summary:	Graphics file browser utility
 Summary(pl):	Narzêdzie do przegl±dania plików graficznych
 Name:		ksquirrel
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
@@ -29,7 +29,8 @@ do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 
 %prep
 %setup -q
-%patch0 -p1
+
+cp -f %{SOURCE1} ksquirrel/
 
 %build
 sed -i -e 's#/usr/lib/squirrel/#%{_libdir}/ksquirrel#g' \

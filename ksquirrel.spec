@@ -12,6 +12,7 @@ URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automake
 BuildRequires:	kdebase-devel >= 3.2
+BuildRequires:	perl-base
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
 Requires:	ksquirrel-libs

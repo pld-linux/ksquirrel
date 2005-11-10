@@ -1,21 +1,21 @@
+%define		_rc	pre9
 Summary:	Graphics file browser utility
 Summary(pl):	Narzêdzie do przegl±dania plików graficznych
 Name:		ksquirrel
-Version:	0.5.0
-Release:	2
+Version:	0.6.0
+Release:	0.%{_rc}.1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
-# Source0-md5:	06bdb4235c082b529f54e41376a7c957
+Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}-%{_rc}.tar.bz2
+# Source0-md5:	8e4d86c9d86efb4a2cf106aa07c3cb87
 Source1:	%{name}.desktop
 URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automake
-BuildRequires:	kdebase-devel >= 3.2
-BuildRequires:	perl-base
+BuildRequires:	kdelibs-devel >= 3.2
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	ksquirrel-libs
+Requires:	ksquirrel-libs = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,12 +30,9 @@ do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
 
 %prep
 %setup -q
-
-cp -f %{SOURCE1} ksquirrel/
+%{__sed} -i 's@/usr/lib@%{_libdir}@g' ksquirrel{,/ksquirrel-small}/*.{cpp,ui*}
 
 %build
-sed -i -e 's#/usr/lib/squirrel/#%{_libdir}/ksquirrel#g' \
-	./ksquirrel/ksquirrel.cpp ./ksquirrel/ksquirrelrc ./ksquirrel/sq_options.ui.h
 install /usr/share/automake/config.* admin
 %configure \
 %if "%{_lib}" == "lib64"
@@ -46,11 +43,11 @@ install /usr/share/automake/config.* admin
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
@@ -60,8 +57,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS README TODO ChangeLog
-%attr(755,root,root) %{_bindir}/ksquirrel
+%doc AUTHORS ChangeLog README TODO
+%attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/ksquirrel.desktop
 %{_datadir}/apps
-%{_iconsdir}/*/*/*/*
+%{_iconsdir}/hicolor/*/*/*
+%{_mandir}/man1/ksquirrel*

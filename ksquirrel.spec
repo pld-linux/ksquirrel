@@ -1,13 +1,12 @@
-%define		_rc	pre9
 Summary:	Graphics file browser utility
 Summary(pl):	Narzêdzie do przegl±dania plików graficznych
 Name:		ksquirrel
 Version:	0.6.0
-Release:	0.%{_rc}.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}-%{_rc}.tar.bz2
-# Source0-md5:	8e4d86c9d86efb4a2cf106aa07c3cb87
+Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
+# Source0-md5:	ab0fedf3536b9c4d49dd01c775165476
 Source1:	%{name}.desktop
 URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:	OpenGL-devel
@@ -50,12 +49,10 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
-%find_lang %{name}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*

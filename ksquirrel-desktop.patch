@@ -1,0 +1,16 @@
+--- ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop.old	2005-12-10 23:46:31.000000000 +0100
++++ ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop	2005-12-28 00:17:50.000000000 +0100
+@@ -9,4 +9,5 @@
+ Terminal=false
+ Name=KSquirrel
+ GenericName=Image viewer
++Categories=Qt;KDE;Graphics;Viewer;
+ MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;
+--- ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop.old	2005-12-10 23:46:38.000000000 +0100
++++ ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop	2005-12-28 00:18:21.000000000 +0100
+@@ -8,4 +8,5 @@
+ Terminal=false
+ Name=ksquirrel-small
+ GenericName=Image viewer, light version
++Categories=Qt;KDE;Graphics;Viewer;
+ MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;

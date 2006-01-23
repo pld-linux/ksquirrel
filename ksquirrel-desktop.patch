@@ -4,11 +4,11 @@
  Exec=ksquirrel-small -caption "%c" %i %m  
  Icon=ksquirrel.png
  Comment=Image viewer, light version
-+Comment[pl]=Przegl眃arka obrazk體, wersja odchudzona
++Comment[pl]=Przegl膮darka obrazk贸w, wersja odchudzona
  Terminal=false
  Name=ksquirrel-small
  GenericName=Image viewer, light version
-+GenericName[pl]=Przegl眃arka obrazk體, wersja odchudzona
++GenericName[pl]=Przegl膮darka obrazk贸w, wersja odchudzona
  Categories=Qt;KDE;Graphics;Viewer;
  MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;
 --- ../BUILD/ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop~	2006-01-23 07:56:08.000000000 +0100
@@ -17,10 +17,10 @@
  Icon=ksquirrel.png
  DocPath=ksquirrel/index.html
  Comment=Image viewer
-+Comment[pl]=Przegl眃arka obrazk體
++Comment[pl]=Przegl膮darka obrazk贸w
  Terminal=false
  Name=KSquirrel
  GenericName=Image viewer
-+GenericName[pl]=Przegl眃arka obrazk體
++GenericName[pl]=Przegl膮darka obrazk贸w
  Categories=Qt;KDE;Graphics;Viewer;
  MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;

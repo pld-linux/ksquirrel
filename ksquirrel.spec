@@ -38,7 +38,7 @@ Group:		X11/Applications/Graphics
 Documentation and common files for ksquirrel and ksquirrel-small.
 
 %description common
-Dokumantacja oraz pliki wspólne dla ksquirrel i ksquirrel-small.
+Dokumentacja oraz pliki wspólne dla ksquirrel i ksquirrel-small.
 
 %package small
 Summary:	Graphics file browser utility - small version
@@ -50,7 +50,6 @@ Requires:	%{name}-common = %{version}-%{release}
 KSquirrel is an image viewer for KDE with disk navigator, file tree,
 thumbnails, extended thumbnails, dynamic format support and tools to
 resize, convert, colorize and print images - small version.
-
 
 %description small -l pl
 KSquirrel to przegl±darka obrazków dla KDE z nawigacj± po dyskach,

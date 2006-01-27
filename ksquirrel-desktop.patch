@@ -1,6 +1,6 @@
---- ../BUILD/ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop~	2006-01-23 07:56:11.000000000 +0100
-+++ ../BUILD/ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop	2006-01-23 07:57:13.000000000 +0100
-@@ -5,8 +5,10 @@
+--- ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop~	2006-01-23 07:56:11.000000000 +0100
++++ ksquirrel-0.6.1/ksquirrel/ksquirrel-small.desktop	2006-01-23 07:57:13.000000000 +0100
+@@ -5,7 +5,10 @@
  Exec=ksquirrel-small -caption "%c" %i %m  
  Icon=ksquirrel.png
  Comment=Image viewer, light version
@@ -9,11 +9,11 @@
  Name=ksquirrel-small
  GenericName=Image viewer, light version
 +GenericName[pl]=Przeglądarka obrazków, wersja odchudzona
- Categories=Qt;KDE;Graphics;Viewer;
++Categories=Qt;KDE;Graphics;Viewer;
  MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;
---- ../BUILD/ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop~	2006-01-23 07:56:08.000000000 +0100
-+++ ../BUILD/ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop	2006-01-23 07:56:47.000000000 +0100
-@@ -6,8 +6,10 @@
+--- ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop~	2006-01-23 07:56:08.000000000 +0100
++++ ksquirrel-0.6.1/ksquirrel/ksquirrel.desktop	2006-01-23 07:56:47.000000000 +0100
+@@ -6,7 +6,10 @@
  Icon=ksquirrel.png
  DocPath=ksquirrel/index.html
  Comment=Image viewer
@@ -22,5 +22,5 @@
  Name=KSquirrel
  GenericName=Image viewer
 +GenericName[pl]=Przeglądarka obrazków
- Categories=Qt;KDE;Graphics;Viewer;
++Categories=Qt;KDE;Graphics;Viewer;
  MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;

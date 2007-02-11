@@ -37,7 +37,7 @@ Group:		X11/Applications/Graphics
 %description common
 Documentation and common files for ksquirrel and ksquirrel-small.
 
-%description common
+%description common -l pl
 Dokumentacja oraz pliki wspólne dla ksquirrel i ksquirrel-small.
 
 %package small

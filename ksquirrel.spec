@@ -1,5 +1,5 @@
 Summary:	Graphics file browser utility
-Summary(pl):	Narzêdzie do przegl±dania plików graficznych
+Summary(pl.UTF-8):   NarzÄ™dzie do przeglÄ…dania plikÃ³w graficznych
 Name:		ksquirrel
 Version:	0.6.3
 Release:	1
@@ -24,25 +24,25 @@ KSquirrel is an image viewer for KDE with disk navigator, file tree,
 thumbnails, extended thumbnails, dynamic format support and tools to
 resize, convert, colorize and print images.
 
-%description -l pl
-KSquirrel to przegl±darka obrazków dla KDE z nawigacj± po dyskach,
-drzewku plików, miniaturkach, rozszerzonych miniaturkach i narzêdziach
-do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków.
+%description -l pl.UTF-8
+KSquirrel to przeglÄ…darka obrazkÃ³w dla KDE z nawigacjÄ… po dyskach,
+drzewku plikÃ³w, miniaturkach, rozszerzonych miniaturkach i narzÄ™dziach
+do zmiany wielkoÅ›ci, rozszerzenia, koloru i do drukowania obrazkÃ³w.
 
 %package common
 Summary:	Common files for KSquirrel
-Summary(pl):	Pliki wspólne dla KSquirrel
+Summary(pl.UTF-8):   Pliki wspÃ³lne dla KSquirrel
 Group:		X11/Applications/Graphics
 
 %description common
 Documentation and common files for ksquirrel and ksquirrel-small.
 
-%description common -l pl
-Dokumentacja oraz pliki wspólne dla ksquirrel i ksquirrel-small.
+%description common -l pl.UTF-8
+Dokumentacja oraz pliki wspÃ³lne dla ksquirrel i ksquirrel-small.
 
 %package small
 Summary:	Graphics file browser utility - small version
-Summary(pl):	Narzêdzie do przegl±dania plików graficznych - ma³a wersja
+Summary(pl.UTF-8):   NarzÄ™dzie do przeglÄ…dania plikÃ³w graficznych - maÅ‚a wersja
 Group:		X11/Applications/Graphics
 Requires:	%{name}-common = %{version}-%{release}
 
@@ -51,11 +51,11 @@ KSquirrel is an image viewer for KDE with disk navigator, file tree,
 thumbnails, extended thumbnails, dynamic format support and tools to
 resize, convert, colorize and print images - small version.
 
-%description small -l pl
-KSquirrel to przegl±darka obrazków dla KDE z nawigacj± po dyskach,
-drzewku plików, miniaturkach, rozszerzonych miniaturkach i narzêdziach
-do zmiany wielko¶ci, rozszerzenia, koloru i do drukowania obrazków -
-ma³a wersja.
+%description small -l pl.UTF-8
+KSquirrel to przeglÄ…darka obrazkÃ³w dla KDE z nawigacjÄ… po dyskach,
+drzewku plikÃ³w, miniaturkach, rozszerzonych miniaturkach i narzÄ™dziach
+do zmiany wielkoÅ›ci, rozszerzenia, koloru i do drukowania obrazkÃ³w -
+maÅ‚a wersja.
 
 %prep
 %setup -q

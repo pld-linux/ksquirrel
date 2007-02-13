@@ -1,5 +1,5 @@
 Summary:	Graphics file browser utility
-Summary(pl.UTF-8):   Narzędzie do przeglądania plików graficznych
+Summary(pl.UTF-8):	Narzędzie do przeglądania plików graficznych
 Name:		ksquirrel
 Version:	0.6.3
 Release:	1
@@ -31,7 +31,7 @@ do zmiany wielkości, rozszerzenia, koloru i do drukowania obrazków.
 
 %package common
 Summary:	Common files for KSquirrel
-Summary(pl.UTF-8):   Pliki wspólne dla KSquirrel
+Summary(pl.UTF-8):	Pliki wspólne dla KSquirrel
 Group:		X11/Applications/Graphics
 
 %description common
@@ -42,7 +42,7 @@ Dokumentacja oraz pliki wspólne dla ksquirrel i ksquirrel-small.
 
 %package small
 Summary:	Graphics file browser utility - small version
-Summary(pl.UTF-8):   Narzędzie do przeglądania plików graficznych - mała wersja
+Summary(pl.UTF-8):	Narzędzie do przeglądania plików graficznych - mała wersja
 Group:		X11/Applications/Graphics
 Requires:	%{name}-common = %{version}-%{release}
 

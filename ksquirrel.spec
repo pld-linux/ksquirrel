@@ -1,12 +1,13 @@
+%define		_pre	pre2
 Summary:	Graphics file browser utility
 Summary(pl.UTF-8):	Narzędzie do przeglądania plików graficznych
 Name:		ksquirrel
-Version:	0.6.3
-Release:	1
+Version:	0.7.0
+Release:	0.%{_pre}.1
 License:	GPL v2
 Group:		X11/Applications/Graphics
-Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
-# Source0-md5:	1520b7297be8fb9f2fc7fee17b913962
+Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}-%{_pre}.tar.bz2
+# Source0-md5:	8798cffb9a3203af51104e49a1481246
 Patch0:		%{name}-desktop.patch
 URL:		http://ksquirrel.sourceforge.net/
 BuildRequires:	OpenGL-devel
@@ -58,7 +59,7 @@ do zmiany wielkości, rozszerzenia, koloru i do drukowania obrazków -
 mała wersja.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{_pre}
 %patch0 -p1
 %{__sed} -i 's@/usr/lib@%{_libdir}@g' ksquirrel/*.{cpp,ui*}
 

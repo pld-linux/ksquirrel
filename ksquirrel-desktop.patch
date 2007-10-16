@@ -1,18 +1,5 @@
---- ksquirrel-0.6.2/ksquirrel/ksquirrel-small.desktop.orig	2005-12-27 18:56:08.000000000 +0100
-+++ ksquirrel-0.6.2/ksquirrel/ksquirrel-small.desktop	2006-04-19 19:14:53.000000000 +0200
-@@ -5,7 +5,10 @@
- Exec=ksquirrel-small -caption "%c" %i %m  
- Icon=ksquirrel.png
- Comment=Image viewer, light version
-+Comment[pl]=Przeglądarka obrazków, wersja odchudzona
- Terminal=false
- Name=ksquirrel-small
- GenericName=Image viewer, light version
-+GenericName[pl]=Przeglądarka obrazków, wersja odchudzona
- MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;image/psd;
-+Categories=Qt;KDE;Graphics;Viewer;
---- ksquirrel-0.6.2/ksquirrel/ksquirrel.desktop.orig	2005-12-27 18:55:55.000000000 +0100
-+++ ksquirrel-0.6.2/ksquirrel/ksquirrel.desktop	2006-04-19 19:14:52.000000000 +0200
+--- ksquirrel-0.7.2/ksquirrel/ksquirrel.desktop	2007-09-28 19:08:15.000000000 +0000
++++ ksquirrel-0.7.2/ksquirrel/ksquirrel.desktop	2007-10-16 14:25:30.000000000 +0000
 @@ -6,7 +6,10 @@
  Icon=ksquirrel.png
  DocPath=ksquirrel/index.html
@@ -21,6 +8,8 @@
  Terminal=false
  Name=KSquirrel
  GenericName=Image viewer
+-MimeType=image/x-mdl;image/ljpeg;image/x-dicom;image/x-xfig;image/svg+xml;image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/x-portable-greymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;image/psd;image/x-djvu;image/x-xcf-gimp;image/x-avs;image/x-cut;image/x-dxf;image/x-iff;image/x-jbig;image/x-koala;image/x-leaf;image/x-lif;image/x-mac;image/x-msp;image/x-mtv;image/x-neo;image/x-pi1;image/x-pi3;image/x-pict;image/x-pix;image/x-pxr;image/x-ras;image/x-raw;image/x-rawrgb;image/x-sct;image/x-sun;image/x-utah;image/x-wal;image/x-wbmp;image/x-xim;image/x-xwd;application/x-font-ttf;application/x-font-ttc;application/x-font-otf;application/x-font-type1
+\
 +GenericName[pl]=Przeglądarka obrazków
- MimeType=image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;image/psd;
++MimeType=image/x-mdl;image/ljpeg;image/x-dicom;image/x-xfig;image/svg+xml;image/gif;image/x-xpm;image/x-xbm;image/jpeg;image/bmp;image/png;image/x-png;image/tiff;image/x-bmp;image/x-psd;image/x-portable-bitmap;image/x-portable-pixmap;image/x-portable-anymap;image/x-portable-graymap;image/x-portable-greymap;image/jp2;image/x-jng;image/x-wmf;video/x-mng;video/x-flic;image/x-targa;image/x-pcx;image/x-photo-cd;image/x-rgb;image/x-xcursor;image/x-ico;image/psd;image/x-djvu;image/x-xcf-gimp;image/x-avs;image/x-cut;image/x-dxf;image/x-iff;image/x-jbig;image/x-koala;image/x-leaf;image/x-lif;image/x-mac;image/x-msp;image/x-mtv;image/x-neo;image/x-pi1;image/x-pi3;image/x-pict;image/x-pix;image/x-pxr;image/x-ras;image/x-raw;image/x-rawrgb;image/x-sct;image/x-sun;image/x-utah;image/x-wal;image/x-wbmp;image/x-xim;image/x-xwd;application/x-font-ttf;application/x-font-ttc;application/x-font-otf;application/x-font-type1
 +Categories=Qt;KDE;Graphics;Viewer;

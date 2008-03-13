@@ -2,7 +2,7 @@ Summary:	Graphics file browser utility
 Summary(pl.UTF-8):	Narzędzie do przeglądania plików graficznych
 Name:		ksquirrel
 Version:	0.7.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/ksquirrel/%{name}-%{version}.tar.bz2
